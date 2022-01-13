@@ -20,25 +20,43 @@
     
     <div class="main-form">
         <form action="index.html" method="post">
+            <div id="lines">
+                <hr class="solid">
+                <hr class="solid_two">
+            </div>
+
             <fieldset>
-                <legend>Contact Information</legend>
+                <legend class="info">Contact Information</legend>
+            <div class="form-flex">
                 <label for="name">Full Name:</label> <br>
                 <input type="text" id="name" name="user_name" placeholder="Required"> <br>
+            </div>
 
+            <div class="form-flex">
                 <label for="mail">Email Address:</label> <br>
                 <input type="email" id="mail" name="user_email" placeholder="Required"><br>
+            </div>
 
+            <div class="form-flex">
                 <label for="phone_number">Phone Number:</label> <br>
                 <input type="tel" id="phone_number" name="user_phone_number"> <br>
+            </div>
 
+            <div class="form-flex">
                 <label for="street">Street Address:</label> <br>
                 <input type="text" id="street" name="user_address"> <br>
+            </div>
 
+            <div class="form-flex">
                 <label for="city">City:</label> <br>
                 <input type="text" id="city" name="user_city"> <br>
+            </div>
+
+            <div class="form-flex">
 
                 <label for="state">State:</label> <br>
                 <select id="state" name="user_state">
+                    <option value="choose">Choose State</option>
                     <option value="michigan">Michigan</option>
                     <option value="florida">Florida</option>
                     <option value="new_york">New York</option>
@@ -46,36 +64,50 @@
                     <option value="north_dakota">North Dakota</option>
                     <option value="south_dakota">South Dakota</option>
                 </select><br>
+            </div>
+
+            <div class="form-flex">
 
                 <label for="code">Zip Code:</label> <br>
                 <input type="text" id="code" name="user_zip_code"> <br>
+            </div>
+
             </fieldset>
+
+            <div id="lines_two">
+                <hr class="solid_two">
+            </div>
 
             <fieldset>
                 <legend>Newsletter</legend>
+                <div class="lower-flex">
                 <p>Select the newsletters you would like to receive</p>
             
                 <input type="checkbox" id="html_news" name="user_newsletter" value="HTML_NEWS">
-                <label>HTML News</label> <br>
+                <label class="news_html">HTML News</label> <br>
 
                 <input type="checkbox" id="css_news" name="user_newsletter" value="CSS_NEWS">
-                <label>CSS News</label> <br>
+                <label class=news_css>CSS News</label> <br>
 
                 <input type="checkbox" id="javascript_news" name="user_newsletter" value="JAVASCRIPT_NEWS">
-                <label>Javascript News</label> <br>
+                <label class="news_java">Javascript News</label> <br>
 
                 <br><label>Newsletter format</label> <br>
                 <input type="radio" id="html" name="user_format" value="HTML">
-                <label>HTML</label> <br>
+                <label class="news_format">HTML</label> <br>
                 <input type="radio" id="plain_text" name="user_format" value="PLAIN_TEXT">
-                <label>Plain text</label>
+                <label class="news_text">Plain text</label><br>
 
-                <p>Other topics you'd like to hear about</p> <br>
-                <textarea name="user_topic"></textarea> <br><br>
+                <br><p>Other topics you'd like to hear about</p> <br>
+                <textarea name="user_topic" rows="5" cols="60"></textarea> <br><br>
 
                 <input type="button" id="button" name="user_signup_button" value="SIGNUP">
+            </div>
             </fieldset>
         </form>
     </div>
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
 </body>
 </html>
