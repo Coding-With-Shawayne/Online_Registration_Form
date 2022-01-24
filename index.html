@@ -68,8 +68,8 @@
 
             <div class="form-flex">
 
-                <label for="code">Zip Code:</label> <br>
-                <input type="text" id="code" name="user_zip_code"> <br>
+                <label for="zip">Zip Code:</label> <br>
+                <input type="text" id="zip" name="user_zip_code"> <br>
             </div>
 
             </fieldset>
@@ -84,24 +84,24 @@
                 <p>Select the newsletters you would like to receive</p>
             
                 <input type="checkbox" id="html_news" name="user_newsletter" value="HTML_NEWS">
-                <label class="news_html">HTML News</label> <br>
+                <label for="html_news" class="news_html">HTML News</label> <br>
 
                 <input type="checkbox" id="css_news" name="user_newsletter" value="CSS_NEWS">
-                <label class=news_css>CSS News</label> <br>
+                <label for="css_news" class=news_css>CSS News</label> <br>
 
                 <input type="checkbox" id="javascript_news" name="user_newsletter" value="JAVASCRIPT_NEWS">
-                <label class="news_java">Javascript News</label> <br>
+                <label for="javascript_news" class="news_java">Javascript News</label> <br>
 
-                <br><label>Newsletter format</label> <br>
+                <br><p>Newsletter format</p> <br>
                 <input type="radio" id="html" name="user_format" value="HTML">
-                <label class="news_format">HTML</label> <br>
+                <label for="html" class="news_format">HTML</label> <br>
                 <input type="radio" id="plain_text" name="user_format" value="PLAIN_TEXT">
-                <label class="news_text">Plain text</label><br>
+                <label for="plain_text" class="news_text">Plain text</label><br>
 
-                <br><p>Other topics you'd like to hear about</p> <br>
-                <textarea name="user_topic" rows="5" cols="60"></textarea> <br><br>
+                <br><label for="text">Other topics you'd like to hear about</label> <br>
+                <textarea id="text" name="user_topic" rows="5" cols="60"></textarea> <br><br>
 
-                <input type="button" id="button" name="user_signup_button" value="SIGNUP">
+                <input type="submit" id="button" name="user_signup_button" value="SIGNUP">
             </div>
             </fieldset>
         </form>
